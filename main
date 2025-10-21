@@ -1,0 +1,25 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    cout << "Enter 5 numbers: " << endl;
+    
+    int array[5] = {0,0,0,0,0};
+    
+    int temp = 0;
+    
+    for(int z = 0; z < 5; z++){
+        cin >> array[z];
+    }
+    
+    for(int i = 0; i < 5; i++){
+        if(array[i] > temp){
+            temp = array[i];
+        }
+    }
+    
+    cout << "The largest number is: " << temp;
+    
+}
